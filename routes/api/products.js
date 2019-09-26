@@ -14,6 +14,7 @@ const products = [
 ];
 
 router.get('/', (req, res, next) => {    
+    console.log(req.user);
     res.json(products);    
 });
 
